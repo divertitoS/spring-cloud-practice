@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @RequestMapping("/guests")
 public class GuestController {
-    private GuestService service;
+    private final GuestService service;
 
     public GuestController(GuestService service) {
         this.service = service;
